@@ -30,7 +30,12 @@ NUMBERS = {
 
 UNDO_STROKE_STENO = '*'
 
-ORTHOGRAPHY_RULES = []
+ORTHOGRAPHY_RULES = [
+    # Collapse vowels in suffixes
+    # como + endo = comendo
+    # cai + iria = cairia
+    (r'^(.+)[aeouiáéíóúãõâêôàü] \^ ([aeouiáéíóúãõâêôàü].+)$', r'\1\2'),
+]
 
 ORTHOGRAPHY_RULES_ALIASES = {}
 
