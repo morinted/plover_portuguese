@@ -6,6 +6,8 @@ Portuguese stenography system for Plover.
 Release Notes
 ~~~~~~~~~~~~~
 
+``0.2.2``: Fix plugin error on newer versions of Plover.
+
 ``0.2.1``: Update orthography rules to handle single-character suffixes
 
 ``0.2.0``: Initial public release
